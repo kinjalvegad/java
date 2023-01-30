@@ -3,11 +3,18 @@ import java.util.*;
  {
 	 public static void main(String args[])
 	 {
-		 int i=0;
-		 while(i<=10)
+		 int n,r,s=0;
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("Enter n");
+		 n=sc.nextInt();
+		 while(n>0)
 		 {
-			 System.out.println("i="+i);
-			 i++;
+			 r=n%10;
+			 s=s+r;
+			 n=n/10;
+			 
+			 
 		 }
+		 System.out.println("s="+s);
 	 }
  }
